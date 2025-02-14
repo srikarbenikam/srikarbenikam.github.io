@@ -1,12 +1,86 @@
-<html>
-    <head>
-        <title>HTML Form</title>
-    </head>
-    <body>
-        <h1>Registration Form with Form Validation</h1>
-        <form action="" method="POST">
-            <label for="name">Enter Name:</label>
-            <input type="text" name="name"/>
-        </form>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="/submit_registration" method="POST">
+        <!-- Full Name -->
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+
+        <!-- Registration No -->
+        <label for="reg_no">Registration No:</label><br>
+        <input type="text" id="reg_no" name="reg_no" required><br><br>
+
+        <!-- Father's Name -->
+        <label for="father_name">Father's Name:</label><br>
+        <input type="text" id="father_name" name="father_name" required><br><br>
+
+        <!-- Aadhaar No -->
+        <label for="aadhaar_no">Aadhaar No:</label><br>
+        <input type="text" id="aadhaar_no" name="aadhaar_no" required><br><br>
+
+        <!-- Occupation -->
+        <label for="occupation">Occupation:</label><br>
+        <input type="text" id="occupation" name="occupation" required><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Address -->
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required>  </textarea><br><br>
+
+        <!-- Blood Group -->
+        <label for="blood_group">Blood Group:</label><br>
+        <input type="text" id="blood_group" name="blood_group"  required><br><br>
+
+        <!-- Mobile -->
+        <label for="mobile">Mobile:</label><br>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+
+        <!-- Parent Mobile -->
+        <label for="parent_mobile">Parent Mobile:</label><br>
+        <input type="tel" id="parent_mobile" name="parent_mobile"  required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- JVD Applicable -->
+        <label for="jvd_applicable">JVD Applicable:</label><br>
+        <input type="text" id="jvd_applicable" name="jvd_applicable"  required><br><br>
+
+        <!-- Hostel -->
+        <label for="hostel">Hostel:</label><br>
+        <input type="text" id="hostel" name="hostel" required><br><br>
+
+        <!-- No of Subjects Passed -->
+        <label for="subjects_passed">No of Subjects Passed:</label><br>
+        <input type="number" id="subjects_passed" name="subjects_passed"  required><br><br>
+
+        <!-- No of Credits Obtained -->
+        <label for="credits_obtained">No of Credits Obtained:</label><br>
+        <input type="number" id="credits_obtained" name="credits_obtained"  required><br><br>
+
+        <!-- No of Subjects Failed -->
+        <label for="subjects_failed">No of Subjects Failed:</label><br>
+        <input type="number" id="subjects_failed" name="subjects_failed"required><br><br>
+
+        <!-- Clubs -->
+        <label for="clubs">Clubs:</label><br>
+        <input type="text" id="clubs" name="clubs"required><br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Registration">
+    </form>
+
+</body>
 </html>
